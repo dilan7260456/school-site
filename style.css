@@ -1,4 +1,4 @@
-/* Google Fonts */
+"/* Google Fonts */
 @import url(https://fonts.googleapis.com/css2?family=poppins);
 
 /* ==== Global ====*/
@@ -193,7 +193,7 @@ header{
     .explore {
         width: 100%;
         height: 100vh;
-        background-image:  url(./images/samc9.jpg);
+        background-image:  url("./images/samc9.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
