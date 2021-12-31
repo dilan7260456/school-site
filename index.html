@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fa/all.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#" class="logo">SAMC</a>
+        <ul class="nav-links">
+            <li class=""> <a href="#"></a>Home</li>
+            <li class=""><a href="#"></a>Explore</li>
+            <li class=""><a href="#"></a>About</li>
+            <li class=""><a href="#"></a>Education</li>
+            <li class=""><a href="#"></a>Contact</li>
+        </ul>
+        <img src="./images/samc.12.png" alt="" class="menu-btn">
+    </nav>
+   <header>
+       <div class="header-content">
+       <h2>Explore your knowlege</h2>
+       <div class="line"></div>
+       <h1>Education is not preparation for life; education is life itself. </h1>
+       <a href="#" class="ctn">Learn More</a>
+    </div>  </header> 
+    <!-- == Events== -->
+    <section class="events">
+        <div class="title">
+        <h1>Upcoming Events</h1>
+        <div class="line"></div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <img src="images/samc10.png" alt="" width="400px" height="300px">
+            <h4>Visiting</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, error ipsum quod molestias libero est?</p>
+        <a href="#" class="ctn">Learn More</a>
+        </div>
+        <div class="col">
+            <img src="images/samc8.png" alt="" width="400px" height="300px">
+            <h4>Competition</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, error ipsum quod molestias libero est?</p>
+        <a href="#" class="ctn">Learn More</a>
+        </div>
+    </div>
+    </section>
+    <section class="explore">
+        <div class="explore-content">
+     <h1>Explore The SAMC</h1>
+    
+     <div class="line"></div>
+     <p>Sainik Awasiya Mahavidyalaya Chainpur, Chitwan (SAM Chitwan) is an English medium co-educational institution run by the Welfare Planning Directorate of Nepalese Army. SAM Chitwan is a semi-residential type of school. Whereas all the male students are residential (staying in the hostel inside the school campus), the female students are day boarders (only taking classes during school study hours).
+
+        SAM Chitwan was inaugurated by General Chhatra Man Singh Gurung, the then Chief of the Army Staff, Nepal Army in a midst of an auspicious gathering of the senior Army officials, teachers, students, parents and other dignitaries on 17th July, 2012 (02nd Shrawan, 2069).</p>    
+    <a href="#" class="ctn">Learn More</a>
+      </section>
+    </div>    
+</section>
+
+<section class="tours">
+  <div class="row">
+      <div class="col content-col">
+          <h1>SAMC AT A GLANCE</h1>
+          <div class="line"></div>
+          <P>View the activities of students throughout SAMC</P>
+          <a href="#" class="ctn">Learn More</a>
+      </div>
+      <div class="col image-col">
+          <div class="image-gallery">
+        <img src="./images/samc1.png" alt="">
+        <img src="./images/samc6.png" alt="">
+        <img src="./images/samc5.png" alt="">
+        <img src="./images/samc8.png" alt="">
+    </div>
+
+      </div>
+  </div>  
+</section>
+
+
+    <script>
+        const nav = document.querySelector("nav.navbar")
+        window.addEventListener("scroll",()=>{
+if(window.pageYOffset > 80){
+    nav.classList.add("up");
+}else{
+    nav.classList.remove("up")
+}
+
+            if(window.pageYOffset > 100){
+                nav.classList.add("fixed");
+            }else{
+                nav.classList.remove("fixed");
+            }
+        })
+
+
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        menuBtn.addEventListener('click',()=>{ 
+            navlinks.classList.toggle('mobile-menu'); 
+        })
+
+    </script>
+
+    <footer class="footer">
+<div class="inner-footer">
+    <div class="social-links">
+        <ul>
+           <li class="social-items"><a href="https://www.facebook.com/Sainik-Awasiya-Mahavidyalaya-Chitwan-101355094993809/"><i class="fab fa-facebook"></i></a></li>
+           <li class="social-items"><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+           <li class="social-items"><a href="#"><i class="fab fa-instagram"></i></a></li>
+           <li class="social-items"><a href="#"><i class="fab fa-tumblr-square"></i></a></li>
+        </ul>
+    </div>
+    
+</div>
+
+<div class="outer-footer">
+    Copyright &copy; Sainik Awasiya Mahavidyalaya Chitwan. All Rights Reserved
+</div>
+    </footer>
+    
+
+    <script src="./fa/all.js"></script>
+</body>
+</html>
